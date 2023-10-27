@@ -147,24 +147,71 @@
 
 // 21------------->
 
-function findSade(start, end) {
-  const arr = [];
-  check = true;
-  for (let i = start; i < end; i++) {
-    check = true;
-    for (let j = 2; j < i; j++) {
-      if (i % j === 0) {
-        check = false;
-      }
-    }
-    if (check) {
-      arr.push(i);
-    }
-  }
-  return arr;
-}
-console.log(findSade(10, 20));
+// function findSade(start, end) {
+//   const arr = [];
+//   check = true;
+//   for (let i = start; i < end; i++) {
+//     check = true;
+//     for (let j = 2; j < i; j++) {
+//       if (i % j === 0) {
+//         check = false;
+//       }
+//     }
+//     if (check) {
+//       arr.push(i);
+//     }
+//   }
+//   return arr;
+// }
+// console.log(findSade(10, 20));
 
-function findSade2(params) {
-    
-}
+// function findSade2(...params) {
+//   const arr2 = [];
+//   check2 = true;
+//   for (let i = 0; i < params.length; i++) {
+//     check2=true
+//     for (let j = 2; j < params[i]; j++) {
+//       if (params[i] % j === 0) {
+//         check2 = false;
+//       }
+//     }
+//     if (check2) {
+//       arr2.push(params[i])
+
+//     }
+//   }
+//   return arr2
+// }
+// console.log(findSade2(10,12,13,17,21,23,24));
+
+// 24-------------------------->
+
+// function Bolen(number) {
+//           let sum=0
+//           const arr=[]
+//           for (let i = 1; i < number; i++) {
+//               if (number % i===0) {
+//                      sum+=i
+
+//               }
+//           }
+//           if (number===sum) {
+//             return "mükəmməl ədəd"
+
+//           }
+
+//   return "mükəmməl ədəd deyl"
+//       }
+//       console.log(Bolen(497));
+
+// 25------------------------>
+
+// function powerOfNUmber(number,n) {
+//   let num=1
+//   for (let i = 1; i <= n; i++) {
+//     num =num*number
+
+//   }
+//   return num
+// }
+// console.log(powerOfNUmber(100,4));
